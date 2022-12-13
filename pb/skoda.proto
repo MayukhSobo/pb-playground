@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package cars;
+option go_package = "cars/skoda/pb";
+
+
+message Engine {
+    int32 torque = 1;
+    int32 powerInHP = 2;
+}
+
+message Skoda {
+    string modelName = 1;
+    Engine carEngine = 2;
+    int32 carPriceInLacs = 3;
+}

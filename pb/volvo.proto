@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package cars;
+option go_package = "cars/volvo/pb";
+
+
+message Adas {
+    bool laneKeepAssist = 1;
+    bool adaptiveCruiseControl = 2;
+    bool blindSoptMontior = 3;
+}
+
+message Volvo {
+    string modelName = 1;
+    Adas adasFeatures = 2;
+    int32 carPriceInLacs = 3;
+}

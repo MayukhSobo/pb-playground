@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package cars;
+option go_package = "cars/pb";
+
+message Car {
+    string carType = 1;
+    bytes carData = 2;
+}
